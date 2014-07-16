@@ -1,0 +1,35 @@
+it:
+  refinery:
+    plugins:
+      companies:
+        title: Companies
+    companies:
+      admin:
+        companies:
+          actions:
+            create_new: Aggiungi Nuovo Company
+            reorder: Riordina Companies
+            reorder_done: Termina il Riordino di Companies
+          records:
+            title: Companies
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Companies. Clicca "Aggiungi Nuovo Company" per aggiungere il tuo primo company.
+          company:
+            view_live_html: Guarda live questo company <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo company
+            delete: Rimuovi per sempre questo company
+      companies:
+        show:
+          other: Altri Companies
+  activerecord:
+    attributes:
+      'refinery/companies/company':
+        company_name: Company Name
+        location: Location
+        adress: Adress
+        phone: Phone
+        email: Email
+        point_of_contact: Point Of Contact
+        industry: Industry
+        market: Market
+        departments: Departments

@@ -1,0 +1,35 @@
+tr:
+  refinery:
+    plugins:
+      companies:
+        title: Companies
+    companies:
+      admin:
+        companies:
+          actions:
+            create_new: Yeni Ekle Company
+            reorder: Tekrar sirala Companies
+            reorder_done: Tekrar siralama tamamlandiCompanies
+          records:
+            title: Companies
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Companies yok henuz.  Tikla "Yeni Ekle Company" eklemek senin ilk company.
+          company:
+            view_live_html: Bunu canlu company goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle company
+            delete: Bunu Sil company sonsuza dek
+      companies:
+        show:
+          other: Diger Companies
+  activerecord:
+    attributes:
+      'refinery/companies/company':
+        company_name: Company Name
+        location: Location
+        adress: Adress
+        phone: Phone
+        email: Email
+        point_of_contact: Point Of Contact
+        industry: Industry
+        market: Market
+        departments: Departments

@@ -1,0 +1,35 @@
+nb:
+  refinery:
+    plugins:
+      companies:
+        title: Companies
+    companies:
+      admin:
+        companies:
+          actions:
+            create_new: Lag en ny Company
+            reorder: Endre rekkefølgen på Companies
+            reorder_done: Ferdig å endre rekkefølgen Companies
+          records:
+            title: Companies
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Companies enda. Klikk på "Lag en ny Company" for å legge til din første company.
+          company:
+            view_live_html: Vis hvordan denne company ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne company
+            delete: Fjern denne company permanent
+      companies:
+        show:
+          other: Andre Companies
+  activerecord:
+    attributes:
+      'refinery/companies/company':
+        company_name: Company Name
+        location: Location
+        adress: Adress
+        phone: Phone
+        email: Email
+        point_of_contact: Point Of Contact
+        industry: Industry
+        market: Market
+        departments: Departments

@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @company.location %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Company Name</h1>
+    <p>
+      <%=raw @company.company_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Location</h1>
+    <p>
+      <%=raw @company.location %>
+    </p>
+  </section>
+  <section>
+    <h1>Adress</h1>
+    <p>
+      <%=raw @company.adress %>
+    </p>
+  </section>
+  <section>
+    <h1>Phone</h1>
+    <p>
+      <%=raw @company.phone %>
+    </p>
+  </section>
+  <section>
+    <h1>Email</h1>
+    <p>
+      <%=raw @company.email %>
+    </p>
+  </section>
+  <section>
+    <h1>Point Of Contact</h1>
+    <p>
+      <%=raw @company.point_of_contact %>
+    </p>
+  </section>
+  <section>
+    <h1>Industry</h1>
+    <p>
+      <%=raw @company.industry %>
+    </p>
+  </section>
+  <section>
+    <h1>Market</h1>
+    <p>
+      <%=raw @company.market %>
+    </p>
+  </section>
+  <section>
+    <h1>Departments</h1>
+    <p>
+      <%=raw @company.departments %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="companies">
+      <% @companies.each do |company| %>
+        <li>
+          <%= link_to company.location, refinery.companies_company_path(company) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

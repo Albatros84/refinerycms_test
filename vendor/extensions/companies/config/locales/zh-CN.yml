@@ -1,0 +1,37 @@
+zh-CN:
+  refinery:
+    plugins:
+      companies:
+        title: Companies
+    companies:
+      admin:
+        companies:
+          actions:
+            create_new: 建立新的 Company
+            reorder: 对 Companies 重新排序
+            reorder_done: 对 Companies 的重新排序结束
+          records:
+            title: Companies
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Companies yet. Click "Add New Company" to add your first company.
+            no_items_yet: 目前没有 Companies . 点击 "Add New Company" 创建一个company.
+          company:
+            view_live_html: 查看 company 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 company
+            delete: 永久删除 company
+      companies:
+        show:
+          other: 其他 Companies
+  activerecord:
+    attributes:
+      'refinery/companies/company':
+        company_name: Company Name
+        location: Location
+        adress: Adress
+        phone: Phone
+        email: Email
+        point_of_contact: Point Of Contact
+        industry: Industry
+        market: Market
+        departments: Departments

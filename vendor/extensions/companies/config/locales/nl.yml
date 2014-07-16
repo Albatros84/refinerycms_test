@@ -1,0 +1,35 @@
+nl:
+  refinery:
+    plugins:
+      companies:
+        title: Companies
+    companies:
+      admin:
+        companies:
+          actions:
+            create_new: Nieuwe Company toevoegen
+            reorder: De volgorde van de Companies wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Company-volgorde
+          records:
+            title: Companies
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Companies. Druk op 'Nieuwe Company toevoegen' om de eerste toe te voegen.
+          company:
+            view_live_html: Deze company op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze company
+            delete: Deze company definitief verwijderen
+      companies:
+        show:
+          other: Andere Companies
+  activerecord:
+    attributes:
+      'refinery/companies/company':
+        company_name: Company Name
+        location: Location
+        adress: Adress
+        phone: Phone
+        email: Email
+        point_of_contact: Point Of Contact
+        industry: Industry
+        market: Market
+        departments: Departments

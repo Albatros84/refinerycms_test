@@ -1,0 +1,35 @@
+cs:
+  refinery:
+    plugins:
+      companies:
+        title: Companies
+    companies:
+      admin:
+        companies:
+          actions:
+            create_new: Přidat Company
+            reorder: Řadit Companies
+            reorder_done: Konec řazení Companies
+          records:
+            title: Companies
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Companies. Zvolte "Přidat Company" pro přidání prvního company.
+          company:
+            view_live_html: Zobrazit náhled company<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit company
+            delete: Smazat company
+      companies:
+        show:
+          other: Další Companies
+  activerecord:
+    attributes:
+      'refinery/companies/company':
+        company_name: Company Name
+        location: Location
+        adress: Adress
+        phone: Phone
+        email: Email
+        point_of_contact: Point Of Contact
+        industry: Industry
+        market: Market
+        departments: Departments

@@ -1,0 +1,60 @@
+<%= form_for [refinery, :companies_admin, @company] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @company,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :company_name -%>
+    <%= f.text_field :company_name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :location -%>
+    <%= f.text_field :location -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:adress, :point_of_contact],
+                :object => "companies/company" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :phone -%>
+    <%= f.text_field :phone -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :email -%>
+    <%= f.text_field :email -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :industry -%>
+    <%= f.text_field :industry -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :market -%>
+    <%= f.text_field :market -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :departments -%>
+    <%= f.text_field :departments -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.companies.admin.companies.company'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @company.location) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>
